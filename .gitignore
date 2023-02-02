@@ -5,3 +5,7 @@ testfiles/
 *.xlsx
 .ipynb_checkpoints
 .Ds_Store
+Django/
+Django/myApp/appDV/data
+Django/myApp/appDV/static/img
+	
