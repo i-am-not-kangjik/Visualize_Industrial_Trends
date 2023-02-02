@@ -3,3 +3,4 @@
 testimgfiles/
 testfiles/
 *.xlsx
+.ipynb_checkpoints
