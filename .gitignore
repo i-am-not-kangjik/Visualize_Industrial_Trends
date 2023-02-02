@@ -4,3 +4,4 @@ testimgfiles/
 testfiles/
 *.xlsx
 .ipynb_checkpoints
+.Ds_Store
