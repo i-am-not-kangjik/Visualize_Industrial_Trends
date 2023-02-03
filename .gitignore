@@ -1,11 +1,15 @@
 *.csv
 *.png
+*.svg
 testimgfiles/
 testfiles/
+<<<<<<< HEAD
 *.xlsx
 .ipynb_checkpoints
 .Ds_Store
 Django/
+=======
+>>>>>>> origin/minho
 Django/myApp/appDV/data
 Django/myApp/appDV/static/img
 	
