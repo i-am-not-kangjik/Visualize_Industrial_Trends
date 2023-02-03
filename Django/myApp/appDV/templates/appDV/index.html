@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<!-- <link href="{% static 'css/styles.css' %}" rel="stylesheet" /> -->
+
+<head>
+<!-- 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content=""> -->
+
+    <title>TEAM QWERT</title>
+
+    <!-- Custom fonts for this template-->
+    <link href='{% static "vendor/fontawesome-free/css/all.min.css"%}' rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href='{% static "css/sb-admin-2.min.css"%}' rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+    
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">TEAM QWERT <sup>mini project</sup></div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Github
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>TEAM QWERT</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Link:</h6>
+                        <a class="collapse-item" href="https://github.com/i-am-not-kangjik">김강직</a>
+                        <a class="collapse-item" href="https://github.com/malcano">이민호</a>
+                        <a class="collapse-item" href="https://github.com/Dodoong22">도강현</a>
+                        <a class="collapse-item" href="https://github.com/Minsoo0405">김민수</a>
+                        <a class="collapse-item" href="https://github.com/yellley">김예린</a>
+
+                    </div>
+                </div>
+            </li>
+
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                
+            </div>
+
+
+            <!--            &lt;!&ndash; Nav Item - Charts &ndash;&gt;-->
+            <!--            <li class="nav-item">-->
+            <!--                <a class="nav-link" href="charts.html">-->
+            <!--                    <i class="fas fa-fw fa-chart-area"></i>-->
+            <!--                    <span>Charts</span></a>-->
+            <!--            </li>-->
+
+            <!--            &lt;!&ndash; Nav Item - Tables &ndash;&gt;-->
+            <!--            <li class="nav-item">-->
+            <!--                <a class="nav-link" href="tables.html">-->
+            <!--                    <i class="fas fa-fw fa-table"></i>-->
+            <!--                    <span>Tables</span></a>-->
+            <!--            </li>-->
+
+            <!--            &lt;!&ndash; Divider &ndash;&gt;-->
+            <!--            <hr class="sidebar-divider d-none d-md-block">-->
+
+            <!--            &lt;!&ndash; Sidebar Toggler (Sidebar) &ndash;&gt;-->
+            <!--            <div class="text-center d-none d-md-inline">-->
+            <!--                <button class="rounded-circle border-0" id="sidebarToggle"></button>-->
+            <!--            </div>-->
+
+            <!--            &lt;!&ndash; Sidebar Message &ndash;&gt;-->
+            <!--            <div class="sidebar-card d-none d-lg-flex">-->
+            <!--                <img class="sidebar-card-illustration mb-2" src='{ %static "img/undraw_rocket.svg" %}' alt="...">-->
+            <!--                <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>-->
+            <!--                <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>-->
+            <!--            </div>-->
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+                
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <!-- <h1 class="h3 mb-0 text-gray-800"><br>산업 트렌드 데이터 시각화</h1> -->
+                        <img src='{%static "img/산업트렌드데이터시각화.png"%}' class="img-fluid" alt="..." width="400">
+
+                    </div>
+
+                    <!-- Content Row -->
+
+                    <div class="row">
+                        <!-- GIF Area Chart -->
+                        <div class="col-xl-6 col-lg-9 d-flex align-self-stretch">
+                            <div class="card shadow mb-8">
+                                
+                                <!-- Card Header - Dropdown -->
+
+                                <div
+                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold text-primary">산업별 산업생산지수</h6>
+                                <div class="dropdown no-arrow">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                        aria-labelledby="dropdownMenuLink">
+                                        <div class="dropdown-header">데이터보기:</div>
+                                        <a class="dropdown-item" href='{%static "distr_of_industr/distr_of_industr.html"%}'>CSV Data</a>
+            
+                                    </div>
+                                </div>
+                            </div>
+                                
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <!-- <img class="d-block w-100" src='{%static "img/산업생산지수.gif"%}'> -->
+                                        <img src='{%static "img/산업생산지수.gif"%}' class="img-fluid" alt="...">
+                                        <!-- <img src='' class="rounded mx-auto d-block" alt="Card image cap"> -->
+                                    </div>
+                                    <br><br><br><br>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Area Chart -->
+                        <div class="col-xl-6 col-lg-9 d-flex align-self-stretch">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+
+                                <div
+                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold text-primary">주요산업단지 업종별 고용현황</h6>
+                                <div class="dropdown no-arrow">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                        aria-labelledby="dropdownMenuLink">
+                                        <div class="dropdown-header">데이터보기:</div>
+                                        <a class="dropdown-item" href='{%static "distr_of_industr/distr_of_industr.html"%}'>CSV Data</a>
+            
+                                    </div>
+                                </div>
+                            </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+
+                                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="0"
+                                                    class="active"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100"
+                                                        src='{%static "img/주요산업단지_업종별_고용인구분포/banwol.png"%}' alt="반월">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100"
+                                                        src='{%static "img/주요산업단지_업종별_고용인구분포/changwon.png"%}' alt="창원">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100"
+                                                        src='{%static "img/주요산업단지_업종별_고용인구분포/gumi.png"%}' alt="구미">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100"
+                                                        src='{%static "img/주요산업단지_업종별_고용인구분포/namdong.png"%}' alt="남동">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100"
+                                                        src='{%static "img/주요산업단지_업종별_고용인구분포/noksan.png"%}' alt="녹산">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100"
+                                                        src='{%static "img/주요산업단지_업종별_고용인구분포/seoul.png"%}' alt="서울">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100"
+                                                        src='{%static "img/주요산업단지_업종별_고용인구분포/sihwa.png"%}' alt="시화">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100"
+                                                        src='{%static "img/주요산업단지_업종별_고용인구분포/ulsan_mipo.png"%}'
+                                                        alt="울산-미포">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100"
+                                                        src='{%static "img/주요산업단지_업종별_고용인구분포/yeosu.png"%}' alt="여수">
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselExampleIndicators"
+                                                role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselExampleIndicators"
+                                                role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xl-6 col-lg-7 d-flex align-self-stretch">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+
+                                <div
+                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold text-primary">산업별 성장률</h6>
+                                <div class="dropdown no-arrow">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                        aria-labelledby="dropdownMenuLink">
+                                        <div class="dropdown-header">데이터보기:</div>
+                                        <a class="dropdown-item" href='{%static "distr_of_industr/distr_of_industr.html"%}'>CSV Data</a>
+            
+                                    </div>
+                                </div>
+                            </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <img src='{%static "img/industry_growth.png"%}' width="480"> </a>
+
+                                        <!--                                        <canvas id="myAreaChart"></canvas>-->
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xl-6 col-lg-7 d-flex align-self-stretch">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold text-primary">지역별 생활업종 신규 사업자 비율</h6>
+                                <div class="dropdown no-arrow">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                        aria-labelledby="dropdownMenuLink">
+                                        <div class="dropdown-header">데이터보기:</div>
+                                        <a class="dropdown-item" href='{%static "distr_of_industr/distr_of_industr.html"%}'>CSV Data</a>
+            
+                                    </div>
+                                </div>
+                                
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <a href = '{%static "type_map/Animal_Hospital_map.html"%}' type="button" class="btn btn-primary">동물병원</a>
+                                        <a href = '{%static "type_map/Appraiser_map.html"%}' type="button" class="btn btn-secondary">감평사</a>
+                                        <a href = '{%static "type_map/Architect_map.html"%}' type="button" class="btn btn-success">건축</a>
+                                        <a href = '{%static "type_map/Art_Institute_map.html"%}' type="button" class="btn btn-primary">예술교육</a>
+                                        <a href = '{%static "type_map/Bakery_map.html"%}' type="button" class="btn btn-warning">빵집</a>
+                                        <a href = '{%static "type_map/Barber_Shop_map.html"%}' type="button" class="btn btn-info">미용실</a><br><br>
+                                        <a href = '{%static "type_map/Bedding_and_Curtain_Shop_map.html"%}' type="button" class="btn btn-warning">침구류</a>
+                                        <a href = '{%static "type_map/Beer_Bar_map.html"%}' type="button" class="btn btn-secondary">바</a>
+                                        <a href = '{%static "type_map/Bicycle_Shop_map.html"%}' type="button" class="btn btn-success">자전거</a>
+                                        <a href = '{%static "type_map/Billiard_Hall_map.html"%}' type="button" class="btn btn-danger">당구장</a>
+                                        <a href = '{%static "type_map/Butcher_Shop_map.html"%}' type="button" class="btn btn-warning">정육점</a>
+                                        <a href = '{%static "type_map/Cafeteria_map.html"%}' type="button" class="btn btn-danger">카페테리아</a><br><br>
+                                        <a href = '{%static "type_map/Car_Repair_Shop_map.html"%}' type="button" class="btn btn-danger">자동차 수리점</a>
+                                        <a href = '{%static "type_map/Certified_Public_Accountant_map.html"%}' type="button" class="btn btn-secondary">회계사</a>
+                                        <a href = '{%static "type_map/Certified_Public_Labor_Attorney_map.html"%}' type="button" class="btn btn-success">노무사</a>
+                                        <a href = '{%static "type_map/Chinese_Food_Restaurant_map.html"%}' type="button" class="btn btn-danger">중국집</a>
+                                        <a href = '{%static "type_map/Clothing_Shop_map.html"%}' type="button" class="btn btn-primary">옷집</a>
+                                        <a href = '{%static "type_map/Coffee_and_Beverage_Shop_map.html"%}' type="button" class="btn btn-info">음료</a><br><br>
+                                        <a href = '{%static "type_map/Computer_Shop_map.html"%}' type="button" class="btn btn-primary">동물병원</a>
+                                        <a href = '{%static "type_map/Convenience_Store_map.html"%}' type="button" class="btn btn-warning">편의점</a>
+                                        <a href = '{%static "type_map/Cosmetics_Shop_map.html"%}' type="button" class="btn btn-primary">화장품</a>
+                                        <a href = '{%static "type_map/Dental_Hospital·Clinic_map.html"%}' type="button" class="btn btn-secondary">의료(치과)</a>
+                                        <a href = '{%static "type_map/Dermatology·Urology_Clinic_map.html"%}' type="button" class="btn btn-warning">비뇨기과</a>
+                                        <a href = '{%static "type_map/Dried_Fish_Shop_map.html"%}' type="button" class="btn btn-info">건어물</a><br><br>
+                                        <a href = '{%static "type_map/Ear-Nose-Throat_Clinic_map.html"%}' type="button" class="btn btn-success">이비인후과</a>
+                                        <a href = '{%static "type_map/Electrical_Appliances_Shop_map.html"%}' type="button" class="btn btn-secondary">전자기기</a>
+                                        <a href = '{%static "type_map/Eyeglasses_Shop_map.html"%}' type="button" class="btn btn-success">안경점</a>
+                                        <a href = '{%static "type_map/Fast_Food_Store_map.html"%}' type="button" class="btn btn-danger">패스트푸드</a>
+                                        <a href = '{%static "type_map/Fish_Shop_map.html"%}' type="button" class="btn btn-secondary">생선가게</a><br><br>
+                                        <a href = '{%static "type_map/Fitness_Center_map.html"%}' type="button" class="btn btn-info">피트니스센터</a>
+                                        <a href = '{%static "type_map/Animal_Hospital_map.html"%}' type="button" class="btn btn-primary">동물병원</a>
+                                        <a href = '{%static "type_map/Appraiser_map.html"%}' type="button" class="btn btn-secondary">감평사</a>
+                                        <a href = '{%static "type_map/Architect_map.html"%}' type="button" class="btn btn-success">건축</a>
+                                        <a href = '{%static "type_map/Art_Institute_map.html"%}' type="button" class="btn btn-primary">예술교육</a>
+                                        <a href = '{%static "type_map/Bakery_map.html"%}' type="button" class="btn btn-warning">빵집</a>
+                                    </div>
+                                    <br><br>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+
+
+
+
+
+
+                    </div>
+                    <div
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">지역별 업종별 고용인구 분포</h6>
+                    <div class="dropdown no-arrow">
+                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                            aria-labelledby="dropdownMenuLink">
+                            <div class="dropdown-header">데이터보기:</div>
+                            <a class="dropdown-item" href='{%static "distr_of_industr/distr_of_industr.html"%}'>CSV Data</a>
+
+                        </div>
+                    </div>
+                </div>
+                    <div class="card bg-dark text-white">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src='{%static "type_map/how_much.html"%}'></iframe>
+                          </div>
+                      </div>
+
+                    <br>
+
+
+                    <!--                    html buttons-->
+                    <!--                    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>-->
+                    <!--                    <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>-->
+                    <!--                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">-->
+
+
+                    <!-- Content Row -->
+
+
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-9 d-flex align-self-stretch">
+                            <div class="card shadow mb-8">
+                                
+                                <!-- Card Header - Dropdown -->
+
+                                <div
+                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold text-primary">게임산업 연도별 국가별 수출현황</h6>
+                                <div class="dropdown no-arrow">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                        aria-labelledby="dropdownMenuLink">
+                                        <div class="dropdown-header">데이터보기:</div>
+                                        <a class="dropdown-item" href='{%static "distr_of_industr/distr_of_industr.html"%}'>CSV Data</a>
+            
+                                    </div>
+                                </div>
+                            </div>
+                                
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <!-- <img class="d-block w-100" src='{%static "img/산업생산지수.gif"%}'> -->
+                                        <img src='{%static "img/게임산업 연도별 국가별 수출현황.PNG"%}' class="img-fluid" alt="...">
+
+                                        <!-- <img src='' class="rounded mx-auto d-block" alt="Card image cap"> -->
+
+                                    </div>
+                                    <br><br><br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-9 d-flex align-self-stretch">
+                            <div class="card shadow mb-8">
+                                
+                                <!-- Card Header - Dropdown -->
+
+                                <div
+                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold text-primary">게임산업 연도별 종목별 수출현황</h6>
+                                <div class="dropdown no-arrow">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                        aria-labelledby="dropdownMenuLink">
+                                        <div class="dropdown-header">데이터보기:</div>
+                                        <a class="dropdown-item" href='{%static "distr_of_industr/distr_of_industr.html"%}'>CSV Data</a>
+            
+                                    </div>
+                                </div>
+                            </div>
+                                
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <!-- <img class="d-block w-100" src='{%static "img/산업생산지수.gif"%}'> -->
+                                        <img src='{%static "img/게임산업 연도별 종목별 수출현황.PNG"%}' class="img-fluid" alt="...">
+
+                                        <!-- <img src='' class="rounded mx-auto d-block" alt="Card image cap"> -->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-9 d-flex align-self-stretch">
+                            <div class="card shadow mb-8">
+                                
+                                <!-- Card Header - Dropdown -->
+
+                                <div
+                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold text-primary">국내총생산과 서비스업 성장률 비교</h6>
+                                <div class="dropdown no-arrow">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                        aria-labelledby="dropdownMenuLink">
+                                        <div class="dropdown-header">데이터보기:</div>
+                                        <a class="dropdown-item" href='{%static "distr_of_industr/distr_of_industr.html"%}'>CSV Data</a>
+            
+                                    </div>
+                                </div>
+                            </div>
+                                
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <!-- <img class="d-block w-100" src='{%static "img/산업생산지수.gif"%}'> -->
+                                        <img src='{%static "img/국내총생산과 서비스업 성장률 비교.png"%}' class="img-fluid" alt="...">
+
+                                        <!-- <img src='' class="rounded mx-auto d-block" alt="Card image cap"> -->
+
+                                    </div>
+                                </div>
+                                <br><br><br><br>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-9 d-flex align-self-stretch">
+                            <div class="card shadow mb-8">
+                                
+                                <!-- Card Header - Dropdown -->
+
+                                <div
+                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold text-primary">서비스업 중 문화산업의 연도별 수출량</h6>
+                                <div class="dropdown no-arrow">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                        aria-labelledby="dropdownMenuLink">
+                                        <div class="dropdown-header">데이터보기:</div>
+                                        <a class="dropdown-item" href='{%static "distr_of_industr/distr_of_industr.html"%}'>CSV Data</a>
+            
+                                    </div>
+                                </div>
+                            </div>
+                                
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <!-- <img class="d-block w-100" src='{%static "img/산업생산지수.gif"%}'> -->
+                                        <img src='{%static "img/서비스업 중 문화산업의 연도별 수출량.png"%}' class="img-fluid" alt="...">
+
+                                        <!-- <img src='' class="rounded mx-auto d-block" alt="Card image cap"> -->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                        <div class="col-xl-6 col-lg-9 d-flex align-self-stretch">
+                            <div class="card shadow mb-8">
+                                
+                                <!-- Card Header - Dropdown -->
+
+                                <div
+                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold text-primary">직무별 검색량</h6>
+                                <div class="dropdown no-arrow">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                        aria-labelledby="dropdownMenuLink">
+                                        <div class="dropdown-header">데이터보기:</div>
+                                        <a class="dropdown-item" href='{%static "distr_of_industr/distr_of_industr.html"%}'>CSV Data</a>
+            
+                                    </div>
+                                </div>
+                            </div>
+                                
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <img class="d-block w-100" src='{%static "img/직무별검색량.gif"%}'>
+
+                                    </div>
+                                </div>
+                                <br><br><br><br><br><br><br><br>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-6 col-lg-9 d-flex align-self-stretch">
+                            <div class="card shadow mb-8">
+                                
+                                <!-- Card Header - Dropdown -->
+
+                                <div
+                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold text-primary">직무별 필요인력현황</h6>
+                                <div class="dropdown no-arrow">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                        aria-labelledby="dropdownMenuLink">
+                                        <div class="dropdown-header">데이터보기:</div>
+                                        <a class="dropdown-item" href='{%static "distr_of_industr/distr_of_industr.html"%}'>CSV Data</a>
+            
+                                    </div>
+                                </div>
+                            </div>
+                                
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <img class="d-block w-100" src='{%static "img/직무별필요인력현황.gif"%}'>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <!-- /.container-fluid -->
+
+                </div>
+
+                <div
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">데이터 산업에서의 직무별 검색량</h6>
+                    <div class="dropdown no-arrow">
+                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                            aria-labelledby="dropdownMenuLink">
+                            <div class="dropdown-header">데이터보기:</div>
+                            <a class="dropdown-item" href='{%static "distr_of_industr/distr_of_industr.html"%}'>CSV Data</a>
+
+                        </div>
+                    </div>
+                </div>
+                    <div class="card bg-dark text-white">
+                            <img class="d-block w-100" src='{%static "img/wordcloud_white.png"%}'>
+                      </div>
+
+
+
+
+                      <div
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">생활업종 계절별 신규사업자 현황</h6>
+                    <div class="dropdown no-arrow">
+                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                            aria-labelledby="dropdownMenuLink">
+                            <div class="dropdown-header">데이터보기:</div>
+                            <a class="dropdown-item" href='{%static "distr_of_industr/distr_of_industr.html"%}'>CSV Data</a>
+
+                        </div>
+                    </div>
+                </div>
+                    <div class="card bg-dark text-white">
+                            <img class="d-block w-100" src='{%static "img/season.png"%}'>
+                      </div>
+
+                      <div
+                      class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h6 class="m-0 font-weight-bold text-primary">생활업종별 연령대 현황</h6>
+                      <div class="dropdown no-arrow">
+                          <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                              aria-labelledby="dropdownMenuLink">
+                              <div class="dropdown-header">데이터보기:</div>
+                              <a class="dropdown-item" href='{%static "distr_of_industr/distr_of_industr.html"%}'>CSV Data</a>
+  
+                          </div>
+                      </div>
+                  </div>
+                      <div class="card bg-dark text-white">
+                              <img class="d-block w-100" src='{%static "img/age.png"%}'>
+                        </div>
+                <!-- End of Main Content -->
+
+                <!-- Footer -->
+                <footer class="sticky-footer bg-white">
+                    <div class="container my-auto">
+                        <div class="copyright text-center my-auto">
+                            <span>Copyright &copy; Playdata-TeamQWERT 2023</span>
+                        </div>
+                    </div>
+                </footer>
+                <!-- End of Footer -->
+
+            </div>
+            <!-- End of Content Wrapper -->
+
+        </div>
+        <!-- End of Page Wrapper -->
+
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
+
+        <!-- Logout Modal-->
+        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                        <a class="btn btn-primary" href="login.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JavaScript-->
+        <script src='{% static "vendor/jquery/jquery.min.js"%}'></script>
+        <script src='{% static "vendor/bootstrap/js/bootstrap.bundle.min.js"%}'></script>
+
+        <!-- Core plugin JavaScript-->
+        <script src='{% static "vendor/jquery-easing/jquery.easing.min.js"%}'></script>
+
+        <!-- Custom scripts for all pages-->
+        <script src='{% static "js/sb-admin-2.min.js"%}'></script>
+
+        <!-- Page level plugins -->
+        <script src='{% static "vendor/chart.js/Chart.min.js"%}'></script>
+
+        <!-- Page level custom scripts -->
+        <script src='{% static "js/demo/chart-area-demo.js"%}'></script>
+        <script src='{% static "js/demo/industry_chart_area.js"%}'></script>
+
+        <script src='{% static "js/demo/chart-pie-demo.js"%}'></script>
+        <div class="folium-map" id="map_102e315fb9fff001eba8450b25969447"></div>
+
+</body>
+
+</html>

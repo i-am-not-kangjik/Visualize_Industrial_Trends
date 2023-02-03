@@ -1,8 +1,8 @@
 *.csv
 *.png
+*.svg
 testimgfiles/
 testfiles/
-Django/
 Django/myApp/appDV/data
 Django/myApp/appDV/static/img
 	
