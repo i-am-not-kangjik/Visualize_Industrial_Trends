@@ -9,11 +9,11 @@
 <br>
 
 ## Members
-`김강직`: 작업내용1    
-`김민수`: 작업내용2    
-`김예린`: 작업내용3   
-`도강현`: 작업내용4   
-`이민호`: 작업내용5   
+`김강직`: 국가산업단지 데이터 전처리, 시각화, HTML과 CSS를 사용해 데이터 파일 HTML 시각화     
+`김민수`: 데이터 직군 데이터(Naver Datalab) 전처리, 시각화(Wordcloud)   
+`김예린`: 생활 업종 신규 사업자 데이터 전처리, 시각화, folium을 통해 HTML 데이터 생성   
+`도강현`: 문화 컨텐츠 사업 데이터 전처리, 시각화   
+`이민호`: 산업 트렌드 데이터 전처리, 시각화, FE(Bootstrap), BE(Django), Notion 관리
 ### [Link To Notion](https://abaft-show-e8c.notion.site/QWERT-734f03d237f642178835d563cde57b41)   
 <br>
 <br>
